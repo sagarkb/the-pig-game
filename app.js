@@ -48,7 +48,7 @@ document.querySelector('.btn-hold').addEventListener('click', () => {
     score[activePlayer] += roundScore;
     document.querySelector('#score-' + activePlayer).textContent =
       score[activePlayer];
-    if (score[activePlayer] >= 10) {
+    if (score[activePlayer] >= 100) {
       document.querySelector('#name-' + activePlayer).textContent = 'Winner!!';
       document
         .querySelector('.player-' + activePlayer + '-panel')
